@@ -1,0 +1,21 @@
+flowchart TB
+
+start
+
+subgraph Gitflow
+
+main --> develop
+
+develop --> feature-1
+develop --> feature-2
+
+feature-1 --> develop
+feature-2 --> develop
+
+develop --> hotfix-1
+
+hotfix-1 --> main
+
+main --> develop
+
+end
